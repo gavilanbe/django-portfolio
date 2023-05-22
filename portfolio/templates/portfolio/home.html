@@ -1,9 +1,12 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <title>My Portfolio</title>
-    </head>
-    <body>
-        <h1>Welcome to my portfolio!</h1>
-    </body>
-</html>
+{% extends "portfolio/base_generic.html" %}
+
+{% block content %}
+<h1>Home</h1>
+{% for project in projects %}
+<div>
+    <h2>{{ project.title }}</h2>
+    <img src="{{ project.image.url }}" alt="{{ project.title }}">
+    <p>{{ project.description }}</p>
+</div>
+{% endfor %}
+{% endblock %}
