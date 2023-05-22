@@ -1,0 +1,42 @@
+/* Reset some default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Use a font that's commonly available and has a tech feel */
+body {
+    font-family: "Courier New", Courier, monospace;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Give the page some breathing room */
+body, nav {
+    padding: 1em;
+}
+
+/* Simple, clean lines for separation */
+hr {
+    border: none;
+    border-top: 1px solid #ddd;
+    margin-bottom: 2em;
+}
+
+/* A navbar that doesn't scream "look at me" */
+nav {
+    background-color: #f8f9fa;
+}
+
+/* Basic link styles, nothing too loud */
+nav a {
+    margin-right: 10px;
+    text-decoration: none;
+    color: black;
+}
+
+/* Add a bit of space around each project */
+.project {
+    margin-bottom: 2em;
+}
